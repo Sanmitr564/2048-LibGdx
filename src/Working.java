@@ -125,7 +125,7 @@ public class Working {
         shiftLeftImproved();
         addSameLeft();
         shiftLeftImproved();
-        if(!arrEquals()) {
+        if (!arrEquals()) {
             newNum();
         }
     }
@@ -198,7 +198,7 @@ public class Working {
         shiftRightImproved();
         addSameRight();
         shiftRightImproved();
-        if(!arrEquals()) {
+        if (!arrEquals()) {
             newNum();
         }
     }
@@ -242,7 +242,7 @@ public class Working {
         shiftUpImproved();
         addSameUp();
         shiftUpImproved();
-        if(!arrEquals()) {
+        if (!arrEquals()) {
             newNum();
         }
     }
@@ -278,7 +278,7 @@ public class Working {
         shiftDownImproved();
         addSameDown();
         shiftDownImproved();
-        if(!arrEquals()){
+        if (!arrEquals()) {
             newNum();
         }
     }
@@ -303,19 +303,17 @@ public class Working {
                         Global.grid[row][col] = num;
                         break;
                     }
-
                 }
             }
             if (ctr == rand)
                 break;
         }
-
     }
 
-    public static boolean arrEquals(){
-        for(int row = 0; row<Global.grid.length; row++){
-            for(int col = 0; col<Global.grid[row].length; col++){
-                if(Global.grid[row][col] != Global.prevGrid[row][col]){
+    public static boolean arrEquals() {
+        for (int row = 0; row < Global.grid.length; row++) {
+            for (int col = 0; col < Global.grid[row].length; col++) {
+                if (Global.grid[row][col] != Global.prevGrid[row][col]) {
                     return false;
                 }
             }
@@ -323,9 +321,9 @@ public class Working {
         return true;
     }
 
-    public static void copy(){
-        for(int row = 0; row<Global.grid.length; row++){
-            for(int col = 0; col<Global.grid[row].length; col++){
+    public static void copy() {
+        for (int row = 0; row < Global.grid.length; row++) {
+            for (int col = 0; col < Global.grid[row].length; col++) {
                 Global.prevGrid[row][col] = Global.grid[row][col];
             }
         }
