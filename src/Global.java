@@ -43,4 +43,5 @@ public class Global {
             entry(Number.n1024, new Texture(Gdx.files.internal("Numbers/1024.jpg"))),
             entry(Number.n2048, new Texture(Gdx.files.internal("Numbers/2048.jpg")))
             );
+
 }

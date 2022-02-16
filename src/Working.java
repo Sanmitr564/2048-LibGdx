@@ -283,7 +283,8 @@ public class Working {
         }
     }
 
-    public static void newNum() {
+    private static void newNum() {
+        /*
         int num = Math.random() > 0.9 ? 4 : 2;
         int num0s = 0;
         for (int[] i : Global.grid) {
@@ -308,6 +309,8 @@ public class Working {
             if (ctr == rand)
                 break;
         }
+
+         */
     }
 
     public static boolean arrEquals() {

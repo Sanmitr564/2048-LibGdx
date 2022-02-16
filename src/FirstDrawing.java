@@ -41,7 +41,7 @@ public class FirstDrawing extends ApplicationAdapter {
         batch = new SpriteBatch();//if you want to use images instead of using ShapeRenderer
         new Working();
 
-        v = new Vector2(0, Global.WORLD_WIDTH / 2);
+        v = new Vector2(0, (float)Global.WORLD_WIDTH / 2);
         state = GameState.wait;
     }
 
